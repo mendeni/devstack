@@ -362,6 +362,10 @@ function create_nova_conf() {
     # (Re)create ``nova.conf``
     rm -f $NOVA_CONF
     add_nova_opt "[DEFAULT]"
+
+    iniset $NOVA_CONF DEFAULT notification_topics "notifications,monitor"
+    iniset $NOVA_CONF DEFAULT notification_driver "nova.openstack.common.notifier.rpc_notifier"
+
     iniset $NOVA_CONF DEFAULT verbose "True"
     iniset $NOVA_CONF DEFAULT debug "True"
     iniset $NOVA_CONF DEFAULT auth_strategy "keystone"
