@@ -1,5 +1,9 @@
 #!/bin/bash
 
+. devstack/localrc
+
+cd /root
+
 sudo apt-get install python-pip python-dev git gcc
 
 sudo pip install eventlet
@@ -21,7 +25,7 @@ NOVACLIENT_INSECURE=1
 NOVA_VERSION="1.1"
 OS_TENANT_NAME=demo
 OS_USERNAME=demo
-OS_PASSWORD=nomoresecrete
+OS_PASSWORD=$ADMIN_PASSWORD
 OS_REGION_NAME=RegionOne
 EOF
 

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /root
+
 apt-get update
 apt-get -y install git python-pip
 

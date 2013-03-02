@@ -2,6 +2,8 @@
 
 apt-get -y install make libapache2-mod-wsgi
 
+cd /root
+
 . devstack/localrc
 
 mysql -p$MYSQL_PASSWORD<<EOF
