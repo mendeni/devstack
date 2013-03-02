@@ -1,8 +1,8 @@
 #!/bin/bash
 
-. devstack/localrc
-
 cd /root
+
+. devstack/localrc
 
 sudo apt-get install python-pip python-dev git gcc
 
