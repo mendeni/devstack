@@ -18,3 +18,6 @@ SERVICE_TOKEN=letmein
 EOF
 
 ./stack.sh
+
+/usr/lib/rabbitmq/lib/rabbitmq_server-2.7.1/sbin/rabbitmq-plugins enable rabbitmq_management
+/etc/init.d/rabbitmq-server restart
