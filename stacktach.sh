@@ -24,7 +24,7 @@ mkdir -vp /srv/www/stacktach/django/stproject/
 mkdir -vp /srv/www/stacktach/wsgi/
 mkdir -vp /srv/www/stacktach/htdocs
 
-cd /srv/www/stacktach/django/stproject/ && git clone git://github.com/rackspace/stacktach.git .
+cd /srv/www/stacktach/django/stproject/ && git clone git://github.com/rackerlabs/stacktach.git .
 
 ln -s /srv/www/stacktach/django/stproject/static/jquery.timers.js \
       /srv/www/stacktach/static/jquery.timers.js
